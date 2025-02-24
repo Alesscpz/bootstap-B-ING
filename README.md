@@ -34,7 +34,7 @@ You can compile the project using the provided Makefile:
 ```bash
 make
 ```
-It will generate a binary called ``asm``
+It will generate a binary called ``model``
 
 ## Authors
 
