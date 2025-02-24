@@ -6,42 +6,41 @@
 ##
 
 #
+# HELP TO BUILD
+#
+
+CC 			?=	gcc
+
+CP			?=	cp
+
+RM			?=	rm -rf
+
+#
 # BINARY CREATION
 #
 
-SRCDIR = src/
+SRC 		= 		main.c
 
-SRC = 		main.c
+OBJ			=		$(SRC:.c=.o)
 
-OBJ = $(SRC:.c=.o)
+NAME		=		model
 
-NAME	=	model
+CFLAGS		=		-Wall -Wextra -I include
 
-CFLAGS = -Wall -Wextra -I include
+CPPFLAGS	=		-g3
 
-CPPFLAGS	=	-g3 -lmy -lmyprintf
-
-FLAGLIB = -L./utilies/my_printf/ -L./utilies/cpool/ -L.
+FLAGLIB		=		 -L.
 
 all:		$(NAME)
 
 $(NAME):	$(OBJ)
-	$(MAKE) -C utilies/my_printf
-	cp utilies/my_printf/libmyprintf.a .
-	$(MAKE) -C utilies/cpool
-	cp utilies/cpool/libmy.a .
-	gcc $(CFLAGS) -o $(NAME) $(OBJ) $(CPPFLAGS) $(FLAGLIB) -lmy
+	$(CC) $(CFLAGS) -o $(NAME) $(OBJ) $(CPPFLAGS) $(FLAGLIB)
 
 clean:
-	$(MAKE) clean -C utilies/my_printf
-	$(MAKE) clean -C utilies/cpool
-	rm -f $(OBJ)
+	$(RM) $(OBJ)
 
 fclean: clean
-	$(MAKE) fclean -C utilies/my_printf
-	$(MAKE) fclean -C utilies/cpool
-
-	rm -f $(NAME)
-	rm -f $(LIB)
+	$(RM) -f $(NAME)
+	$(RM) -f $(LIB)
 
 re:	fclean all
