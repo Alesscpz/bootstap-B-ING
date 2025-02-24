@@ -19,7 +19,10 @@ int error_check(int ac, char **env)
 int main(int argc, char **argv, char **env)
 {
     sfRenderWindow* window;
+    sfClock *clock = sfClock_create();
 
+    if (!clock)
+        return 84;
     if (error_check(argc, env) == -1)
         exit(84);
     window = create_window(1920, 1080, 32, "bs_world");

@@ -17,5 +17,6 @@ sfRenderWindow *create_window(int width, int height,
     mode.height = height;
     mode.bitsPerPixel = bitsPerPixer;
     window = sfRenderWindow_create(mode, name, sfResize | sfClose, NULL);
+    sfRenderWindow_setFramerateLimit(window, 60);
     return window;
 }

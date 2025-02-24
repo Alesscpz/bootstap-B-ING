@@ -7,6 +7,6 @@
 
 int print_error(const char *msg)
 {
-    fprint("%s\n", msg);
+    printf("%s\n", msg);
     return 84;
 }
