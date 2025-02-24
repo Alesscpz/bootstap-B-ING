@@ -51,3 +51,17 @@ fclean: clean
 	$(RM) -f $(LIB)
 
 re:	fclean all
+
+tests_run:
+	gcc -o unit_test $(SRC) tests/unit_test.c -I include --coverage -lcriterion
+	./unit_test
+
+coverage: tests_run
+	gcovr
+	@find -name "*.gcda" -delete -o -name "*.gcno" -delete
+	@find -name "unit_tests"	-delete
+
+coding_style:
+	coding-style . .
+	@cat coding-style-reports.log
+	@rm -f "coding-style-reports.log";
