@@ -19,7 +19,10 @@ RM			?=	rm -rf
 # BINARY CREATION
 #
 
-SRC 		= 		main.c
+SRC 		= 		main.c													\
+					src/convert_deg_rad.c									\
+					src/create_window.c										\
+					src/manage_wireframe.c
 
 OBJ			=		$(SRC:.c=.o)
 

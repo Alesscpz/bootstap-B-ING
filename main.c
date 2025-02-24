@@ -7,6 +7,7 @@
 
 #include <stddef.h>
 #include <stdlib.h>
+#include <SFML/Graphics.h>
 
 int error_check(int ac, char **env)
 {
@@ -17,7 +18,10 @@ int error_check(int ac, char **env)
 
 int main(int argc, char **argv, char **env)
 {
+    sfRenderWindow* window;
+
     if (error_check(argc, env) == -1)
         exit(84);
+    window = create_window(1920, 1080, 32, "bs_world");
     return 0;
 }

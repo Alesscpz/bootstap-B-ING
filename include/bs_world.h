@@ -10,6 +10,9 @@
 
     #include <SFML/Graphics.h>
 
+sfRenderWindow *create_window(int width, int height,
+    int bitsPerPixer, char *name);
+
 sfVertexArray * create_line(sfVector2f *point1, sfVector2f *point2);
 
 #endif BS_WORLD_H
