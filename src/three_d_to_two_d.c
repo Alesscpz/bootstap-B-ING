@@ -15,7 +15,7 @@ sfVector2f project_iso_point(int x, int y, int z)
     int rad_y = convert_degree_to_radian(ANGLE_Y);
 
     point.x = cos(rad_x) * x - cos(rad_x) * y;
-    point.y = sin(rad_y) * y + sin (rad_y) * x - z;
+    point.y = sin(rad_y) * y + sin(rad_y) * x - z;
     return point;
 }
 
