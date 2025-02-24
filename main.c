@@ -23,5 +23,7 @@ int main(int argc, char **argv, char **env)
     if (error_check(argc, env) == -1)
         exit(84);
     window = create_window(1920, 1080, 32, "bs_world");
+        if (window == NULL)
+        return print_error("The creation of the window does'nt succeed\n");
     return 0;
 }
