@@ -30,7 +30,8 @@ NAME		=		model
 
 CFLAGS		=		-Wall -Wextra -I include
 
-CPPFLAGS	=		-g3
+CPPFLAGS	+=	-g3 -lcsfml-audio -lcsfml-graphics
+CPPFLAGS	+=	-lcsfml-network -lcsfml-system -lcsfml-window
 
 FLAGLIB		=		 -L.
 

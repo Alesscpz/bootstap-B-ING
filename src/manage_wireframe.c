@@ -6,10 +6,11 @@
 */
 
 #include <SFML/Graphics.h>
+#include <SFML/System.h>
 
-sfVertexArray * create_line(sfVector2f *point1, sfVector2f *point2)
+sfVertexArray *create_line(sfVector2f *point1, sfVector2f *point2)
 {
-    sfVertexArray * vertex_array = sfVertexArray_create();
+    sfVertexArray *vertex_array = sfVertexArray_create();
     sfVertex vertex1 = {.position = *point1, .color = sfWhite};
     sfVertex vertex2 = {.position = *point2, .color = sfWhite};
 

@@ -17,4 +17,6 @@ sfRenderWindow *create_window(int width, int height,
 
 sfVertexArray * create_line(sfVector2f *point1, sfVector2f *point2);
 
+int simulation(sfRenderWindow *windows, sfClock *clock);
+
 #endif BS_WORLD_H
