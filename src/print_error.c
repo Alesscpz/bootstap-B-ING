@@ -5,8 +5,10 @@
 ** print_error.c
 */
 
+#include <stdio.h>
+
 int print_error(const char *msg)
 {
-    printf("%s\n", msg);
+    dprintf("%s\n", msg);
     return 84;
 }
