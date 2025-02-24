@@ -7,6 +7,8 @@
 
 #ifndef BS_WORLD_H
     #define BS_WORLD_H
+    #define ANGLE_X 45
+    #define ANGLE_Y 35
 
     #include <SFML/Graphics.h>
 
