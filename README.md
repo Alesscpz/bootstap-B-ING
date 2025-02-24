@@ -38,8 +38,8 @@ It will generate a binary called ``asm``
 
 ## Authors
 
-  - Côme FOUGERE
-  - Alexandre BOURSE
-  - Alexandre LAURENT
-  - Rayan GICQUEL
-  - Alessandro CAPOZZI
+  - Côme FOUGERE ([Github](https://github.com/Come-fgr) / [LinkdIn](https://www.linkedin.com/in/côme-fougère-11a82833b/))
+  - Alexandre BOURSE ([Github](https://github.com/Alex29B) / [LinkdIn](https://www.linkedin.com/in/alexandre-bourse-b10085343/))
+  - Alexandre LAURENT ([Github](https://github.com/Aval0on) / [LinkdIn](https://www.linkedin.com/in/aval0n/))
+  - Rayan GICQUEL ([Github](https://github.com/kyliangi) / (NOT FOUND))
+  - Alessandro CAPOZZI ([Github](https://github.com/Alesscpz) / [LinkdIn](https://www.linkedin.com/in/capozzi-alessandro/))
