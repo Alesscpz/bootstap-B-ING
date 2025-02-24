@@ -1,8 +1,8 @@
 /*
-** EPITECH PROJECT, 2025
-** main.c
+** EPITECH PROJECT, 2024
+** bs_world
 ** File description:
-** main.c
+** 3d_to_2d.c
 */
 
 #include "bs_world.h"

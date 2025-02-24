@@ -1,8 +1,8 @@
 /*
 ** EPITECH PROJECT, 2024
-** my_radar
+** bs_world
 ** File description:
-** window.c
+** create_window.c
 */
 
 #include <SFML/Graphics.h>

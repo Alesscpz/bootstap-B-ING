@@ -1,8 +1,8 @@
 /*
-** EPITECH PROJECT, 2025
-** main.c
+** EPITECH PROJECT, 2024
+** bs_world
 ** File description:
-** main.c
+** convert_deg_rad.c
 */
 
 #include "pi.h"

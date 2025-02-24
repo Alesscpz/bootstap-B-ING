@@ -1,12 +1,10 @@
 /*
 ** EPITECH PROJECT, 2024
-** main.c
+** bs_world
 ** File description:
 ** main.c
 */
 
-#include <stddef.h>
-#include <stdlib.h>
 #include <SFML/Graphics.h>
 #include "bs_world.h"
 
