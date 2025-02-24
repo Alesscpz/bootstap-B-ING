@@ -8,6 +8,7 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <SFML/Graphics.h>
+#include "bs_world.h"
 
 int error_check(int ac, char **env)
 {
@@ -28,5 +29,6 @@ int main(int argc, char **argv, char **env)
     window = create_window(1920, 1080, 32, "bs_world");
         if (window == NULL)
         return print_error("The creation of the window does'nt succeed\n");
+    simulation(window, clock);
     return 0;
 }
