@@ -18,3 +18,15 @@ sfVector2f project_iso_point(int x, int y, int z)
     point.y = sin(rad_y) * y + sin (rad_y) * x - z;
     return point;
 }
+
+sfVector2f **create_2d_map(int **map)
+{
+    sfVector2f **new_map;
+
+    for (int i = 0; map[i] != NULL; i++) {
+        for (int j = 0; map[i][j] != NULL; i++) {
+            new_map[i][j] = project_iso_point(i, j, map[i][j]);
+        }
+    }
+    return new_map;
+}

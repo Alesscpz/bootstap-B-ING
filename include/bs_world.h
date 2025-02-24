@@ -15,8 +15,10 @@
 sfRenderWindow *create_window(int width, int height,
     int bitsPerPixer, char *name);
 
-sfVertexArray * create_line(sfVector2f *point1, sfVector2f *point2);
+sfVertexArray *create_line(sfVector2f *point1, sfVector2f *point2);
 
 int simulation(sfRenderWindow *windows, sfClock *clock);
+
+sfVector2f **create_2d_map(int **map);
 
 #endif BS_WORLD_H
