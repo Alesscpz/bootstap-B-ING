@@ -22,6 +22,9 @@ RM			?=	rm -rf
 SRC 		= 		main.c													\
 					src/convert_deg_rad.c									\
 					src/create_window.c										\
+					src/print_error.c										\
+					src/3d_to_2d.c											\
+					src/simulation.c										\
 					src/manage_wireframe.c
 
 OBJ			=		$(SRC:.c=.o)
@@ -31,7 +34,7 @@ NAME		=		model
 CFLAGS		=		-Wall -Wextra -I include
 
 CPPFLAGS	+=	-g3 -lcsfml-audio -lcsfml-graphics
-CPPFLAGS	+=	-lcsfml-network -lcsfml-system -lcsfml-window
+CPPFLAGS	+=	-lcsfml-network -lcsfml-system -lcsfml-window -lm
 
 FLAGLIB		=		 -L.
 

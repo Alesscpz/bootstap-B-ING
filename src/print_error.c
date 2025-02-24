@@ -9,6 +9,6 @@
 
 int print_error(const char *msg)
 {
-    dprintf("%s\n", msg);
+    dprintf(2, "%s\n", msg);
     return 84;
 }
